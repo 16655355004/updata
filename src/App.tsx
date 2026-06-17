@@ -4,6 +4,7 @@
  */
 
 import { useState, useEffect } from "react";
+import { Apple } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import WeChatGuide from "./components/WeChatGuide";
 import { getAppVer } from "./api/version";
@@ -153,9 +154,7 @@ export default function App() {
               onClick={() => handleDownload(true)}
               className="flex items-center justify-center space-x-2 bg-[#315dfa] hover:bg-[#254bda] text-white h-13 rounded-2xl active:scale-[0.98] transition-all shadow-md font-bold text-xs tracking-wide select-none"
             >
-              <svg className="w-3.5 h-3.5 fill-current shrink-0" viewBox="0 0 170 170">
-                <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.34.13-9.13-1.92-14.35-6.15-3.57-2.85-7.44-7.48-11.62-13.9-9.11-13.79-15.69-30.82-19.74-51.09-2.46-12.24-3.7-23.77-3.7-34.61 0-16.14 2.85-29.62 8.55-40.42 5.71-10.81 13.88-16.38 24.51-16.71 5.13-.13 10.42 1.34 15.89 4.39 5.47 3.06 9.38 4.59 11.73 4.59 2.01 0 5.64-1.34 10.89-4.02 5.25-2.68 10.11-3.96 14.6-3.85 11.96.22 21.6 4.41 28.93 12.57 6.26 7.04 10.37 15.53 12.33 25.46-14.08 6.81-22.18 16.54-24.31 29.17-2.13 12.63 2.13 24.16 12.74 34.61 6.16 6.04 13.06 9.49 20.73 10.34-2.69 7.42-6.57 15.22-11.63 23.41zM119.22 34.61c0-11.28 4.02-21.45 12.06-29.5 8.04-8.04 17.65-12.18 28.83-12.4 1.12 12.18-2.91 22.8-12.06 31.85-9.16 9.05-18.99 13.29-29.5 12.72.67-1.11.67-1.56.67-2.67z" />
-              </svg>
+              <Apple className="w-3.5 h-3.5 shrink-0" fill="currentColor" strokeWidth={2.5} />
               <span>iPhone 下载</span>
             </button>
 

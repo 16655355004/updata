@@ -1,5 +1,5 @@
 {
-  "name": "App Download Landing Page",
+  "name": "隐擎AI",
   "description": "智医健康 App 微信 H5 极速下载落地页，支持 Android (APK包) 与 iOS (App Store/TestFlight) 双端安全合规极速分发与引导",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
