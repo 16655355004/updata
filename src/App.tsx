@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect } from "react";
-import { Apple } from "lucide-react";
+import { Smartphone } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import WeChatGuide from "./components/WeChatGuide";
 import { getAppVer } from "./api/version";
@@ -154,7 +154,7 @@ export default function App() {
               onClick={() => handleDownload(true)}
               className="flex items-center justify-center space-x-2 bg-[#315dfa] hover:bg-[#254bda] text-white h-13 rounded-2xl active:scale-[0.98] transition-all shadow-md font-bold text-xs tracking-wide select-none"
             >
-              <Apple className="w-3.5 h-3.5 shrink-0" fill="currentColor" strokeWidth={2.5} />
+              <Smartphone className="w-3.5 h-3.5 shrink-0" strokeWidth={2.5} />
               <span>iPhone 下载</span>
             </button>
 

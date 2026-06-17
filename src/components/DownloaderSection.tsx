@@ -7,7 +7,6 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { 
   AppWindow, 
-  Apple,
   Download, 
   Smartphone, 
   RefreshCw, 
@@ -113,7 +112,7 @@ export default function DownloaderSection({ versionInfo, onWeChatDownloadAttempt
                 onClick={handleIosClick}
                 className="w-full h-12 bg-slate-900 hover:bg-slate-800 text-white rounded-2xl flex items-center justify-center space-x-2 font-bold text-xs shadow-md transition-all active:scale-[0.98] select-none"
               >
-                <Apple className="w-4 h-4" fill="currentColor" strokeWidth={2.5} />
+                <Smartphone className="w-4 h-4" strokeWidth={2.5} />
                 <span>App Store 极速正式版</span>
               </button>
             )}
