@@ -8,6 +8,8 @@ import { motion, AnimatePresence } from "motion/react";
 import WeChatGuide from "./components/WeChatGuide";
 import { getAppVer } from "./api/version";
 import type { AppVerItem } from "./types";
+import logoUrl from "./assets/images/app-logo.png";
+import mockupUrl from "./assets/images/app-screenshot.jpg";
 
 export default function App() {
   const [isWeChat, setIsWeChat] = useState(false);
@@ -15,9 +17,6 @@ export default function App() {
   const [targetIOS, setTargetIOS] = useState(false);
   const [androidVer, setAndroidVer] = useState<AppVerItem | null>(null);
   const [iosVer, setIosVer] = useState<AppVerItem | null>(null);
-
-  const logoUrl = "yinqing_logo.png";
-  const mockupUrl = "微信图片_20260603113436_1908_5190.jpg";
 
   useEffect(() => {
     if (typeof window !== "undefined" && window.navigator) {
